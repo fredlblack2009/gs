@@ -1,0 +1,1 @@
+./jstatd -J-Djava.rmi.server.hostname=58.64.149.110 -J-Djava.security.policy=jstatd.all.policy
