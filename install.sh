@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "--------------------------------------------------------------------------------------"
-webaddr=192.168.100.143
+webaddr=192.168.20.94
 echo "$webaddr web2 start ..."
 scp -P 50222 /root/jdk-8u65-linux-x64.gz root@${webaddr}:/usr/local/
 scp -P 50222 /root/redis-3.0.4.tar.gz root@${webaddr}:/usr/local/
@@ -9,7 +9,7 @@ ssh -p 50222 root@$webaddr << eeooff
 yum -y install gcc-c++
 yum -y install telnet
 useradd oracle
-echo 'qwer1234!@#$' | passwd --stdin oracle
+echo 'David~!@#$4321`' | passwd --stdin oracle
 su - oracle
 cd ~
 mkdir redis
@@ -40,7 +40,7 @@ cp /root/jdk-8u65-linux-x64.gz /usr/local/
 yum -y install gcc-c++
 yum -y install telnet
 useradd oracle
-echo 'qwer1234!@#$' | passwd --stdin oracle
+echo 'David~!@#$4321`' | passwd --stdin oracle
 cd /usr/local
 tar -zxvf jdk-8u65-linux-x64.gz
 alternatives --install /usr/sbin/java java /usr/local/jdk1.8.0_65/bin/java 1
@@ -61,7 +61,7 @@ ssh -p 50222 root@$webaddr << eeooff
 yum -y install gcc-c++
 yum -y install telnet
 useradd oracle
-echo 'qwer1234!@#$' | passwd --stdin oracle
+echo 'David~!@#$4321`' | passwd --stdin oracle
 cd /usr/local
 tar -zxvf jdk-8u65-linux-x64.gz
 alternatives --install /usr/sbin/java java /usr/local/jdk1.8.0_65/bin/java 1
@@ -70,7 +70,7 @@ tar -zxvf nginx-1.9.5.tar.gz
 yum -y install gcc-c++
 yum -y install pcre pcre-devel  
 yum -y install zlib zlib-devel  
-yum -y install openssl openssl--devel
+yum -y install openssl openssl-devel
 cd /usr/local/nginx-1.9.5
 ./configure
 make && make install
@@ -94,7 +94,7 @@ ssh -p 50222 root@$webaddr << eeooff
 yum -y install gcc-c++
 yum -y install telnet
 useradd oracle
-echo 'qwer1234!@#$' | passwd --stdin oracle
+echo 'David~!@#$4321`' | passwd --stdin oracle
 cd /usr/local
 tar -zxvf jdk-8u65-linux-x64.gz
 alternatives --install /usr/sbin/java java /usr/local/jdk1.8.0_65/bin/java 1
@@ -103,7 +103,7 @@ tar -zxvf nginx-1.9.5.tar.gz
 yum -y install gcc-c++
 yum -y install pcre pcre-devel
 yum -y install zlib zlib-devel
-yum -y install openssl openssl--devel
+yum -y install openssl openssl-devel
 cd /usr/local/nginx-1.9.5
 ./configure
 make && make install
@@ -126,7 +126,7 @@ echo "$webaddr open start ..."
 scp -P 50222 /root/jdk-8u65-linux-x64.gz root@${webaddr}:/usr/local/
 ssh -p 50222 root@$webaddr << eeooff
 useradd oracle
-echo 'qwer1234!@#$' | passwd --stdin oracle
+echo 'David~!@#$4321`' | passwd --stdin oracle
 cd /usr/local
 tar -zxvf jdk-8u65-linux-x64.gz
 alternatives --install /usr/sbin/java java /usr/local/jdk1.8.0_65/bin/java 1
